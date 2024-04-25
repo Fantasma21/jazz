@@ -17,13 +17,11 @@ body{
 /* Layout */
 .Container {
     margin: 0 auto;
-    background-color: rgb(115, 183, 228);
 }
 
 .Flex {
     display: flex;
     justify-content: space-between;
-    background-color: #a9a9a9;
 }
 
 /* topo do site */
@@ -45,11 +43,42 @@ header {
     height: 120px;
 }
 
+#check {
+    display: none;
+}
+
+label {
+    font-size: 2em;
+    padding-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #4c4c4e;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%; /* esconde o menu */
+    width: 100%;
+    transition: all 0.6s; /* tempo transição do menu */
+}
+
+#check:checked ~ ul {
+    right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border: 1px solid rgb(134, 128, 128);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Smartphone Landscape  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
-    body{
-        background-color: red;
-    }
     /* Layout */
     .Container{
         max-width: 540px;
@@ -57,9 +86,6 @@ header {
 }
 /* Tablet Portrait  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px){
-    body{
-        background-color: yellow;
-    }
     /* Layout */
     .Container {
         max-width: 720px;
@@ -67,9 +93,6 @@ header {
 }
 /* Tablet Landscape  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px){
-    body{
-        background-color: green;
-    }
     /* Layout */
     .Container {
         max-width: 960px;
@@ -77,9 +100,6 @@ header {
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px){
-    body{
-        background-color: gray; 
-    }
     /* Layout */
     .Container {
         max-width: 1140px;
@@ -94,5 +114,29 @@ header {
         width: 189px;
         height: 189px;
         margin: 30px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: #343434;
+    }
+
+    nav ul li a:hover {
+        color: rgb(108, 5, 243);
     }
 }

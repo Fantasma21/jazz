@@ -1,17 +1,17 @@
-
 /* Importação google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /*CSS RESET*/
-*{
+* {
     margin: 0;
     border: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: "Open Sans", sans-serif;
-    font-size: 1em; /*equivale a 16px*/
+    font-size: 1em;
+    /*equivale a 16px*/
 }
 
 /* Layout */
@@ -75,12 +75,14 @@ nav ul {
     height: 100vh;
     position: fixed;
     top: 60px;
-    right: -100%; /* esconde o menu */
+    right: -100%;
+    /* esconde o menu */
     width: 100%;
-    transition: all 0.6s; /* tempo transição do menu */
+    transition: all 0.6s;
+    /* tempo transição do menu */
 }
 
-#check:checked ~ ul {
+#check:checked~ul {
     right: 0;
 }
 
@@ -99,11 +101,14 @@ main {
     height: 75vh;
     background: url(img/banner-jazz.png);
     background-size: cover;
+    background-position: center;
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* alinha o texto no centro */
+    justify-content: center;
+    /* alinha o texto no centro */
     text-align: center;
+
 }
 
 main h1 {
@@ -112,18 +117,19 @@ main h1 {
 
 main h2 {
     font-size: 1em;
-    margin: 20px 0px 50px 0px; 
+    margin: 20px 0px 50px 0px;
 }
 
- /* Sobre */
- #sobre {
+/* Sobre */
+#sobre {
     padding: 50px 0px;
     background: url(img/bk2.png);
     background-size: cover;
+    background-position: center;
 }
 
 #destaqueSobre {
-      display: none;
+    display: none;
 }
 
 #textoSobre {
@@ -144,19 +150,23 @@ main h2 {
 }
 
 /* Smartphone Landscape  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 576px){
+@media (min-width: 576px) {
+
     /* Layout */
-    .Container{
+    .Container {
         max-width: 540px;
     }
 
     /* Destaque */
-    main h1, main h2 {
+    main h1,
+    main h2 {
         text-shadow: #000 0.05em 0.05em 0.05em;
     }
 }
+
 /* Tablet Portrait  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 768px){
+@media (min-width: 768px) {
+
     /* Layout */
     .Container {
         max-width: 720px;
@@ -164,7 +174,7 @@ main h2 {
 
     /* Destaque */
     main {
-      height: 45vh;  
+        height: 45vh;
     }
 
     main h1 {
@@ -172,11 +182,13 @@ main h2 {
     }
 
     main h2 {
-    font-size: 2em;
+        font-size: 2em;
     }
 }
+
 /* Tablet Landscape  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 992px){
+@media (min-width: 992px) {
+
     /* Layout */
     .Container {
         max-width: 960px;
@@ -187,8 +199,10 @@ main h2 {
         height: 70vh;
     }
 }
+
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
+
     /* Layout */
     .Container {
         max-width: 1140px;
@@ -227,5 +241,19 @@ main h2 {
 
     nav ul li a:hover {
         color: rgb(108, 5, 243);
+    }
+
+    /* Sobre */
+    #sobre {
+        background-attachment: fixed; /* efeito paralax */
+    }
+
+    #destaqueSobre {
+        display: inline;
+    }
+
+    #destaqueSobre img {
+        border-radius: 50%; /* deixar a imagem redonda */
+        margin-right: 50px;
     }
 }

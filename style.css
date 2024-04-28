@@ -29,6 +29,11 @@ body {
     align-items: center;
 }
 
+.Flex3 {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Botão */
 .Botao {
     text-decoration: none;
@@ -66,7 +71,11 @@ header {
 
 label {
     font-size: 2em;
-    padding-right: 20px;
+    position: fixed; /* fixar o botão do menu */
+    top: 5px;
+    right: 15px;
+    text-shadow: #cfc5c5 0.05em 0.05em 0.05em; /* sombreamento no botão "menu" */
+    color: rgba(0, 0, 0, 0.5); /* trasnparencia no botão */
 }
 
 nav ul {
@@ -149,6 +158,25 @@ main h2 {
     margin-right: 10px;
 }
 
+/* one page "maravilha musical */
+#onepage {
+    padding: 30px 10px;
+}
+
+#onepage h2 {
+    margin-bottom: 10px;
+}
+
+#onepage p {
+    margin-bottom: 25px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    border: 0;
+}
+
 /* Smartphone Landscape  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
 
@@ -162,7 +190,14 @@ main h2 {
     main h2 {
         text-shadow: #000 0.05em 0.05em 0.05em;
     }
+
+    #video iframe {
+        width: 560px;
+        height: 315px;
+    }
 }
+
+
 
 /* Tablet Portrait  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px) {
@@ -255,5 +290,11 @@ main h2 {
     #destaqueSobre img {
         border-radius: 50%; /* deixar a imagem redonda */
         margin-right: 50px;
+    }
+
+    /* one page */
+    .Flex3 {
+        flex-direction: row;
+        align-items: center;
     }
 }

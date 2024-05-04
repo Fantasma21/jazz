@@ -69,13 +69,18 @@ header {
     display: none;
 }
 
+
+
 label {
     font-size: 2em;
-    position: fixed; /* fixar o botão do menu */
+    position: fixed;
+    /* fixar o botão do menu */
     top: 5px;
     right: 15px;
-    text-shadow: #cfc5c5 0.05em 0.05em 0.05em; /* sombreamento no botão "menu" */
-    color: rgba(0, 0, 0, 0.5); /* trasnparencia no botão */
+    text-shadow: #cfc5c5 0.05em 0.05em 0.05em;
+    /* sombreamento no botão "menu" */
+    color: rgba(0, 0, 0, 0.5);
+    /* trasnparencia no botão */
 }
 
 nav ul {
@@ -280,7 +285,8 @@ main h2 {
 
     /* Sobre */
     #sobre {
-        background-attachment: fixed; /* efeito paralax */
+        background-attachment: fixed;
+        /* efeito paralax */
     }
 
     #destaqueSobre {
@@ -288,7 +294,8 @@ main h2 {
     }
 
     #destaqueSobre img {
-        border-radius: 50%; /* deixar a imagem redonda */
+        border-radius: 50%;
+        /* deixar a imagem redonda */
         margin-right: 50px;
     }
 

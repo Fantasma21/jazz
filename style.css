@@ -57,6 +57,7 @@ body {
     width: 58px;
 }
 
+
 /* Smartphone Portrait  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 /* Cabaçalho */
@@ -185,6 +186,21 @@ main h2 {
     height: 191px;
     border: 0;
 }
+
+/* pdf */
+#pdf {
+    padding: 50px 0px;
+    background: url(img/bk2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#textoPdf {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#textoPdf
 
 /* Smartphone Landscape  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {

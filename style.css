@@ -200,7 +200,21 @@ main h2 {
     padding: 0px 10px;
 }
 
-#textoPdf
+#textoPdf h2 {
+    margin-bottom: 10px;
+}
+
+#textoPdf p {
+    margin-bottom: 40px;
+}
+
+span {
+    display: none; /* esconder texto */
+}
+
+#qrcode {
+    display: none;
+}
 
 /* Smartphone Landscape  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
@@ -323,5 +337,23 @@ main h2 {
     .Flex3 {
         flex-direction: row;
         align-items: center;
+    }
+
+    /* pdf */
+    #pdf {
+        background-attachment: fixed; /* mesma imagem,continuidade ao efeito paralax */
+    }
+
+    span {
+        display: inline;
+    }
+
+    #qrcode {
+        display: inline;
+    }
+
+    #qrcode img {
+        width: 190px;
+        height: 190px;
     }
 }
